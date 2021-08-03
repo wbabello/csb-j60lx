@@ -7,32 +7,36 @@ body {
 
 .company-name {
   font-size: 60px;
+  font-family:sans-serif;
   line-height: 1.4;
   letter-spacing: 0px;
   color: black;
   background-color: red;
   font-family: Serif;
   width:  auto;
+  font-size: 3rem;
+  line-height: 3rem;
+
+ 
 }
 
 .flex-container {
   display: flex;
   height: 800px;
-  background-color: saddlebrown;
+  background-color: lightslategray;
   width: auto;
 }
 
 .flex-child-1 {
   margin-top: 20px;
-  flex: 1;
+  /* flex: 1; */
   border: 2px solid yellow;
-  height: 400px;
-  width: 100px;
-  background-color: slateblue;
+  height: 200px;
+  width: 200px;
+  /* background-color: slateblue; */ 
   float: left;
-  padding: 20px;
-  border: 2px solid red;
-}
+  padding: 5px;
+ }
 
 .flex-child-2 {
   margin-top: 20px;
