@@ -25,24 +25,65 @@ for (let i = 0; i < movies.length; i++) {
 const random = Math.floor(Math.random() * 9);
 document.querySelector(".random").innerHTML += `<p>${movies[random]}</p>`;
 
-var slideIndex = 0;
-showSlides();
+// var slideIndex = 0;
+// showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+// function showSlides() {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("dot");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex - 1].style.display = "block";
+//   dots[slideIndex - 1].className += " active";
+//   setTimeout(showSlides, 5000); // Change image every 2 seconds
+// }
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+const init = (n) => {
+  slides.forEach((slide, index) => {
+    slide.style.display = "none";
+    dots.forEach((dot, index) => {
+      dot.classList.remove("active");
+    });
+  });
+  slides[n].style.display = "block";
+  dots[n].classList.add("active");
+};
+document.addEventListener("DOMContentLoaded", init(currentSlide));
+const next = () => {
+  currentSlide >= slides.length - 1 ? (currentSlide = 0) : currentSlide++;
+  init(currentSlide);
+};
+
+const prev = () => {
+  currentSlide <= 0 ? (currentSlide = slides.length - 1) : currentSlide--;
+  init(currentSlide);
+};
+
+document.querySelector(".next").addEventListener("click", next);
+
+document.querySelector(".prev").addEventListener("click", prev);
+
+setInterval(() => {
+  next();
+}, 5000);
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    console.log(currentSlide);
+    init(i);
+    currentSlide = i;
+  });
+});
