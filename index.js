@@ -22,30 +22,8 @@ for (let i = 0; i < movies.length; i++) {
   //document.querySelector(".schedule").innerHTML += `<p>${movies[i]}</p>`;
 }
 
-const random = Math.floor(Math.random() * 9);
-document.querySelector(".random").innerHTML += `<p>${movies[random]}</p>`;
-
-// var slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {
-//     slideIndex = 1;
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex - 1].style.display = "block";
-//   dots[slideIndex - 1].className += " active";
-//   setTimeout(showSlides, 5000); // Change image every 2 seconds
-// }
+// const random = Math.floor(Math.random() * 9);
+// document.querySelector(".random").innerHTML += `<p>${movies[random]}</p>`;
 
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide");
@@ -72,13 +50,13 @@ const prev = () => {
   init(currentSlide);
 };
 
-document.querySelector(".next").addEventListener("click", next);
+// document.querySelector(".next").addEventListener("click", next);
 
-document.querySelector(".prev").addEventListener("click", prev);
+// document.querySelector(".prev").addEventListener("click", prev);
 
 setInterval(() => {
   next();
-}, 5000);
+}, 2000);
 
 dots.forEach((dot, i) => {
   dot.addEventListener("click", () => {

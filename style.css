@@ -1,42 +1,60 @@
 /* -----------------------------
     GENERAL SECTION
 -------------------------------- */
+
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  height: 200px;
+}
+
+.d-flex {
+  margin-top: 25px;
+  margin-right: -75x;
+}
+
+.new-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .company-name {
   font-size: 60px;
-  font-family:sans-serif;
+  font-family: sans-serif;
   line-height: 1.4;
   letter-spacing: 0px;
   color: black;
   font-family: Serif;
-  width:  auto;
+  width: auto;
   font-size: 3rem;
   line-height: 3rem;
 
- 
+
 }
 
 .flex-container {
   display: flex;
   height: 420px;
-  background-color: lightslategray;
+  margin-top: -30px;
   width: auto;
 }
 
- .flex-child-1 {
+.flex-child-1 {
   margin-top: 20px;
-  flex: 1; 
-  /* border: 2px solid yellow; */
+  flex: 1;
   height: 400px;
   width: 100%;
-  background-color: slateblue; 
-  float: left; 
+  background-color: beige;
+  float: left;
   padding: 5px;
-  background-color: #cccccc;
- } 
+
+}
 
 
 .flex-child-2 {
@@ -50,11 +68,11 @@ body {
   background-color: springgreen;
   background-image: url("imgs/barnimages.jpg");
   background-color: #cccccc;
-  background-position: center center; 
-  background-size: 100% 100%; 
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
-.mx-auto{
+.mx-auto {
   margin-top: 35px;
 }
 
@@ -93,25 +111,32 @@ body {
 
   margin-top: 8px;
   top: 50%;
-  left: 50%; 
+  left: 50%;
   align-items: center;
   color: white;
   text-align: justify;
   text-decoration: blink;
   color: white;
   padding: 1em;
-  
-  
+
+
 }
 
 /* //------------------------------------Part 2-------------------------------------------------------------// */
 
 
+.container1 {
+
+  background-color: grey;
+  height: 500px;
+}
+
+
 .program-container {
- height: 700px;
- background-color: #cdda23;
- width: auto;
- 
+  height: 700px;
+  background-color: #cdda23;
+  width: auto;
+
 
 }
 
@@ -145,6 +170,11 @@ body {
   right: 2px;
 }
 
+.slide-container img {
+  height: 200px;
+  object-fit: contain;
+}
+
 .dots-container {
   display: flex;
   justify-content: center;
@@ -174,7 +204,7 @@ body {
 
 body {
   height: 100%;
-/*   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+  /*   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
 }
 
 body h1 {
@@ -218,319 +248,209 @@ body h1 {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px
+  }
 }
 
- 
-  .stream-title {
-    margin-top:  25px;
-    text-align: center;
-    height: 50px;  
-    overflow: hidden;
-    position: relative;
-   }
-   .stream-title h3 {
-    font-size: 3em;
-    color: blue;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-    /* Starting position */
+
+.stream-title {
+  margin-top: 25px;
+  text-align: center;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.stream-title h3 {
+  font-size: 3em;
+  color: blue;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position
     -moz-transform:translateX(100%);
     -webkit-transform:translateX(100%);  
     transform:translateX(100%);
-    /* Apply animation to this element */  
-    -moz-animation: example1 15s linear infinite;
-    -webkit-animation: example1 15s linear infinite;
-    animation: stream-title 15s linear infinite;
-   }
-   /* Move it (define the animation) */
-   @-moz-keyframes stream-title {
-    0%   { -moz-transform: translateX(100%); }
-    100% { -moz-transform: translateX(-100%); }
-   }
-   @-webkit-keyframes stream-title {
-    0%   { -webkit-transform: translateX(100%); }
-    100% { -webkit-transform: translateX(-100%); }
-   }
-   @keyframes stream-title {
-    0%   { 
-    -moz-transform: translateX(100%); /* Firefox bug fix */
-    -webkit-transform: translateX(100%); /* Firefox bug fix */
-    transform: translateX(100%);     
-    }
-    100% { 
-    -moz-transform: translateX(-100%); /* Firefox bug fix */
-    -webkit-transform: translateX(-100%); /* Firefox bug fix */
-    transform: translateX(-100%); 
-    }
-   }
+    /* Apply animation to this element */
+  -moz-animation: example1 15s linear infinite;
+  -webkit-animation: example1 15s linear infinite;
+  animation: stream-title 15s linear infinite;
+}
 
+/* Move it (define the animation) */
+@-moz-keyframes stream-title {
+  0% {
+    -moz-transform: translateX(100%);
+  }
 
-   .subcontent{
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
 
-    height: 400px;
-    background-color: white;
-   }
+@-webkit-keyframes stream-title {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes stream-title {
+  0% {
+    -moz-transform: translateX(100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(100%);
+    /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+.subcontent-container {
+
+  height: 200px;
+  background-color: red
+}
 
 
 
 .container {
- background-color: blue;
- height: 300px;
- margin-right: 200px;
+  background-color: white;
+  height: 300px;
+  margin-right: 200px;
 }
+
 .active {
-  background-color: #1da1f2 !important; 
+  background-color: #1da1f2 !important;
 }
+
 .list-group-item .active {
   font-size: 50px;
 }
+
 .text-active {
-  background-color: #1da1f2 !important; 
+  background-color: #1da1f2 !important;
   font-size: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
 }
+
 .text-active h4 {
   color: #FFFFFF !important;
   font-size: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
 }
+
 .fa {
   font-size: 25px;
   padding-right: 10px;
   color: #140202;
 }
+
 .list-group-item {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
 }
-   
-.list-group{
+
+.list-group {
   margin-top: 35px;
   margin-right: 100px;
-}    
- 
-.row info-panel{
-  margin-top: 35px;
+}
+
+.row info-panel {
+  margin-top: 55px;
 }
 
 
-.movie-panel{
-  background-color: red;
-  height: 750px;
- 
+.movie-panel {
+  background-color: black;
+  height: 425px;
+
 }
 
-.movie-container{
-  margin-top: 40px;
+.movie-container {
+  margin-top: 30px;
 }
 
 #logo-image {
-  height:50%;
-  width:75%;
-  object-fit:contain;
-/* 
-.random-movie {
-  height: 565px;
-  position: relative;
-  background: rgba(40, 172, 108, 0.4);
-  padding-top: 57px;
-  padding-bottom: 23px;
-  margin-top: 10px;
-}
-
-.random {
-  background-color: #fbc500;
-  height: 80px;
-  width: inherit;
-  margin-left: -2px;
-  margin-top: -13px;
-  line-height: 30px;
-  font-family: sans-serif;
-  font-size: 30px;
-  align-items: center;
-} */
-/* 
-ain {
-  position: relative;
-  height: 635px;
-  border: 1px solid #999;
-  margin: 50px 0;
-  box-shadow: 3px 3px 3px #333;
-}
+  height: 50%;
+  width: 75%;
+  object-fit: contain;
 
 
-
-
-
-
-
-
-
-
-
-/* .inner {
-  width: 960px;
-  margin: 0 auto;
-  background-color: #131313;
-  margin: 20px;
-} */
-
-/* .rightAligned {
-  float: right;
-}
-/*  */
-/* -----------------------------
-  HEADER SECTION
--------------------------------- */
-/* header {
-  height: 450px;
-  background-color: (red, yellow);
-  position: static;
-  display: flex;
-}
-.inner-header {
-  display: flex;
-  flex-direction: column;
-}
-.Logo {
-  text-align: left;
-  float: left;
-  margin-top: 181px;
-  margin-left: -481px;
-  /* background-color: red; 
-} 
-
-/* .new-logo {
-  display: flex;
-  float: left;
-  margin-top: 15px;
-  /* flex-direction: row; 
-} 
-/* ================================== */
-
-
-  /* width: 100%;
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  float: right;
-  text-transform: uppercase;
-  display: flex-wrap;
-  margin-left: 250px; */
-/* 
-  background-image: url("../images/header-shade.jpg");
-  width: XXpx;
-  height: XXpx;
-}
-.inner {
-  margin-top: -229px;
-  margin-left: 308px;
-}
-
-.banner {
-  margin-top: -676px;
-  margin-left: 273px;
-  position: static;
-} 
-
-
-
-
-/* =====================   Random PICTURES SECTION ==== */
-
-/* .bigPics {
-  position: absolute;
-  top: 56px;
-  right: 56px;
-
-  opacity: 0;
-} */
-
-/* =====================   THUMBS  SECTION ==== */
-/* .thumbnails {
-  position: relative;
-  top: 16px;
-  left: 56px;
-  margin-bottom: 37px;
-  margin-top: -44px;
-  z-index: 20;
-} */
-/* 
-.thumbnails:hover + .bigPics {
-  opacity: 1;
-  z-index: 20; 
-}
-/* =====================  FRAMEDIVS  SECTION ==== */
-
-/* .frameDivs {
-  position: absolute;
-  top: 28px;
-  background-color: #fff;
-  height: 579px;
-  z-index: 10;
-}
-
-#frameDiv1 {
-  left: 28px;
-  width: 204px;
-  margin-top: 10px;
-}
-
-#frameDiv2 {
-  width: 695px;
-  right: 28px;
-  background-image: url("../imgs/Gallery_00.jpg");
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 /* -----------------------------
   MAIN SECTION - Movie Content 
 -------------------------------- */
-.grid-container {
+.main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  background-color: yellow;
+  background-color: blue;
   height: 500px;
 }
 
 .schedule-of-movies {
-  display: grid;
-  height: 400px;
+  /* display: grid; */
+  height: 281px;
   width: 75%;
   float: left;
   padding: 20px;
   background: rgba(134, 134, 128, 0.4);
-  margin-top: 25px;
-  margin-left: -100px;
+  /* margin-top: 25px; */
+  margin-left: 65px;
+  background-color: red;
+  overflow: hidden;
 }
-.program-for-next-few-days {
-  display: grid;
-  height: 400px;
-  width: 75%;
+
+.next-program {
+  height: 280px;
+  width: 490px;
   float: right;
   padding: 20px;
   background: rgba(134, 134, 128, 0.4);
-  margin-top: 25px;
+  background-color: chartreuse;
+  overflow: hidden;
+  margin-right: 345px;
 }
 
-.column-1 {
+.schedule-1 {
+
   font-size: 25px;
   line-height: 1.4;
   justify-items: center;
@@ -538,6 +458,8 @@ ain {
   color: #fff;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
+  width: 335px;
+  background-color: #cdda23;
 }
 
 .complete-list {
@@ -557,26 +479,29 @@ ain {
   color: #fff;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
+  background-color: palevioletred;
 }
 
 .annoucements {
   display: grid;
   background-color: (gray, lightgray, white, yellow, turquoise);
   height: 500px;
+  background-color: red;
+  height: 400px;
+  margin-top: 100px;
 }
 
 .news {
   margin-top: 50px;
   display: flex;
-  background: linear-gradient(
-    to left,
-    gray,
-    lightgray,
-    white,
-    yellow,
-    turquoise
-  );
+  background: linear-gradient(to left,
+      gray,
+      lightgray,
+      white,
+      yellow,
+      turquoise);
 }
+
 .news:before,
 h1:after {
   color: white;
@@ -584,8 +509,10 @@ h1:after {
   flex: 1;
   border-bottom: groove 2px;
   margin: auto 0.25em;
-  box-shadow: 0 -1px; /* ou 0 1px si border-style:ridge */
+  box-shadow: 0 -1px;
+  /* ou 0 1px si border-style:ridge */
 }
+
 /* -----------------------------
   FOOTER SECTION
 -------------------------------- */
@@ -622,7 +549,7 @@ footer {
    Schdule .HTML SECTION
 -------------------------------- */
 .list-header {
-  background-color: red;
+  background-color: orange;
   height: 100px;
 }
 
@@ -630,8 +557,45 @@ footer {
    SECTION
 -------------------------------- */
 /* -----------------------------
-   SECTION
+   SECTION 2- working today
 -------------------------------- */
+
+
 /* -----------------------------
    SECTION
--------------------------------- */ */
+-------------------------------- */
+*/ .muviContent {
+
+
+  height: 200px;
+  width: 816px;
+}
+
+.muvidetailsLeft {
+
+  width: 500px;
+  height: 280px;
+  float: left;
+  /* margin-top: 85px; */
+  font-size: 15px;
+  text-align: justify;
+  font-family: Helvetica;
+  background-color: green;
+
+
+}
+
+
+.muvidetailsRight {
+  width: 500px;
+  height: 280px;
+  background-color: yellow;
+  float: right;
+  margin-left: 58px;
+
+}
+
+.listButton {
+  margin-top: 25px;
+  margin-right: 50px;
+}
