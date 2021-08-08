@@ -50,10 +50,16 @@ body {
   flex: 1;
   height: 400px;
   width: 100%;
-  background-color: beige;
+  background-color: gray;
   float: left;
   padding: 5px;
 
+}
+
+.logo-text {
+  font-size: 18px;
+  color: white;
+  padding: 25px;
 }
 
 
@@ -64,15 +70,16 @@ body {
   width: auto;
   float: right;
   padding: 20px;
-  /* border: 2px solid red; */
+  /* border: 2px solid red;  */
   background-color: springgreen;
   background-image: url("imgs/barnimages.jpg");
   background-color: #cccccc;
   background-position: center center;
   background-size: 100% 100%;
+
 }
 
-.mx-auto {
+*/ .mx-auto {
   margin-top: 35px;
 }
 
@@ -109,14 +116,14 @@ body {
 
 .introduction {
 
-  margin-top: 8px;
-  top: 50%;
-  left: 50%;
+  margin-top: 5px;
   align-items: center;
-  color: white;
+  color: black;
+  font-size: medium;
   text-align: justify;
   text-decoration: blink;
-  color: white;
+  font-size: 25px;
+
   padding: 1em;
 
 
@@ -239,112 +246,10 @@ body h1 {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px
-  }
-}
-
-
-.stream-title {
-  margin-top: 25px;
-  text-align: center;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-
-.stream-title h3 {
-  font-size: 3em;
-  color: blue;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 50px;
-  text-align: center;
-  /* Starting position
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);  
-    transform:translateX(100%);
-    /* Apply animation to this element */
-  -moz-animation: example1 15s linear infinite;
-  -webkit-animation: example1 15s linear infinite;
-  animation: stream-title 15s linear infinite;
-}
-
-/* Move it (define the animation) */
-@-moz-keyframes stream-title {
-  0% {
-    -moz-transform: translateX(100%);
-  }
-
-  100% {
-    -moz-transform: translateX(-100%);
-  }
-}
-
-@-webkit-keyframes stream-title {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-@keyframes stream-title {
-  0% {
-    -moz-transform: translateX(100%);
-    /* Firefox bug fix */
-    -webkit-transform: translateX(100%);
-    /* Firefox bug fix */
-    transform: translateX(100%);
-  }
-
-  100% {
-    -moz-transform: translateX(-100%);
-    /* Firefox bug fix */
-    -webkit-transform: translateX(-100%);
-    /* Firefox bug fix */
-    transform: translateX(-100%);
-  }
-}
-
 .subcontent-container {
 
-  height: 200px;
-  background-color: red
+  height: 250px;
+  background-color: white
 }
 
 
@@ -398,7 +303,7 @@ body h1 {
 
 .movie-panel {
   background-color: black;
-  height: 425px;
+  height: 325px;
 
 }
 
@@ -408,10 +313,20 @@ body h1 {
 
 #logo-image {
   height: 50%;
-  width: 75%;
+  width: 100%;
   object-fit: contain;
 
 
+}
+
+.recommendations {
+  background-color: grey;
+  height: 55px;
+  color: white;
+}
+
+.panel-text {
+  margin-right: 25px;
 }
 
 /* -----------------------------
@@ -421,22 +336,23 @@ body h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  background-color: blue;
+  background-color: grey;
   height: 500px;
 }
 
 .schedule-of-movies {
   /* display: grid; */
   height: 281px;
-  width: 75%;
+  width: 403px;
   float: left;
-  padding: 20px;
-  background: rgba(134, 134, 128, 0.4);
+  padding: -21px;
+  /* background: rgba(134, 134, 128, 0.4); */
   /* margin-top: 25px; */
-  margin-left: 65px;
-  background-color: red;
-  overflow: hidden;
+  margin-left: -24px;
+  /* background-color: white; */
+  /* overflow: hidden; */
 }
+
 
 .next-program {
   height: 280px;
@@ -455,11 +371,21 @@ body h1 {
   line-height: 1.4;
   justify-items: center;
   letter-spacing: 0px;
-  color: #fff;
+  color: black;
   font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  width: 335px;
-  background-color: #cdda23;
+  width: 400px;
+
+  margin-top: 45px;
+}
+
+.tn-group-lg>.btn,
+.btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+  padding: 0px;
+  margin-top: 54px;
 }
 
 .complete-list {
@@ -484,15 +410,28 @@ body h1 {
 
 .annoucements {
   display: grid;
-  background-color: (gray, lightgray, white, yellow, turquoise);
+  /* background-color: (gray, lightgray, white, yellow, turquoise); */
   height: 500px;
-  background-color: red;
+  background-color: black;
   height: 400px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+}
+
+.annocement {
+  color: black;
+  background-color: grey;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: black;
+  border-radius: .3rem;
+  margin-top: -33px;
 }
 
 .news {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   display: flex;
   background: linear-gradient(to left,
       gray,
@@ -513,21 +452,34 @@ h1:after {
   /* ou 0 1px si border-style:ridge */
 }
 
+
+.news-column {
+  margin-right: 45px;
+}
+
+
+
 /* -----------------------------
   FOOTER SECTION
 -------------------------------- */
 footer {
-  color: #fff;
-  background-color: #cdda23;
-  padding: 30px 0 120px;
-  margin-top: 50px;
-  text-align: justify;
-  letter-spacing: 0.8px;
-  word-spacing: 1.5px;
-  line-height: 20px;
-  font-family: sans-serif;
-  font-size: 20px;
+  margin-top: 60px;
+  background-color: black;
+  /* color: #fff; */
+  padding: 30px 0 180px;
 }
+
+
+.container,
+.container-lg,
+.container-md,
+.container-sm {
+  max-width: 960px;
+  background-color: grey;
+  padding: 30px;
+  border-spacing: 25px;
+}
+
 
 /* -----------------------------
   GALLERY PAGE SECTION
@@ -599,3 +551,19 @@ footer {
   margin-top: 25px;
   margin-right: 50px;
 }
+
+.request-access {
+  display: flex;
+  margin-right: 300px;
+  width: fit-content;
+}
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 1px;
+  margin-top: -64px;
+}
+
+/* ===================Footer======================= */
