@@ -408,9 +408,110 @@ footer {
   height: 100px;
 }
 
-/* -----------------------------
-   SECTION
--------------------------------- */
+
+/* .text-container {
+  height: 35px;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.text-container ul {
+  color: #fff;
+  background: #428BCA;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  list-style: none;
+  animation: 12s linear 0s normal none infinite change1;
+  -webkit-animation: 12s linear 0s normal none infinite change1;
+  -moz-animation: 12s linear 0s normal none infinite change1;
+  -o-animation: 12s linear 0s normal none infinite change1;
+}
+
+.text-container ul li {
+  font-size: 22px;
+  line-height: 35px;
+
+}
+
+@-webkit-keyframes change1 {
+  0% {
+    margin-top: 0px;
+  }
+
+  15% {
+    margin-top: 0px;
+  }
+
+  25% {
+    margin-top: -35px;
+  }
+
+  40% {
+    margin-top: -35px;
+  }
+
+  50% {
+    margin-top: -70px;
+  }
+
+  65% {
+    margin-top: -70px;
+  }
+
+  75% {
+    margin-top: -35px;
+  }
+
+  85% {
+    margin-top: -35px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes change1 {
+  0% {
+    margin-top: 0px;
+  }
+
+  15% {
+    margin-top: 0px;
+  }
+
+  25% {
+    margin-top: -35px;
+  }
+
+  40% {
+    margin-top: -35px;
+  }
+
+  50% {
+    margin-top: -70px;
+  }
+
+  65% {
+    margin-top: -70px;
+  }
+
+  75% {
+    margin-top: -35px;
+  }
+
+  85% {
+    margin-top: -35px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+} */
+
+
 /* -----------------------------
    SECTION 2- working today
 -------------------------------- */
