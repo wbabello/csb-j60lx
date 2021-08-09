@@ -2,11 +2,13 @@
     GENERAL SECTION
 -------------------------------- */
 
-
+.wrapper {
+  background-color: lightgray;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8); */
 }
 
 .navbar {
@@ -147,118 +149,29 @@ body {
 
 }
 
-.slide-container .prev,
-.slide-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: all 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.slide-container .prev:hover,
-.slide-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-.slide-container .prev {
-  left: 2px;
-}
-
-.slide-container .next {
-  right: 2px;
-}
-
-.slide-container img {
-  height: 200px;
-  object-fit: contain;
-}
-
-.dots-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.dots-container .dot {
-  cursor: pointer;
-  margin: 5px;
-  width: 20px;
-  height: 20px;
-  color: #333;
-  border-radius: 50%;
-  background-color: #dfd6ce;
-}
-
-.dots-container .dot.active {
-  border: 2px solid green;
-}
-
-* {
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
 
 body {
   height: 100%;
-  /*   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+  background-image: linear-gradient(to top, #eff1f3 0%, #e7f0fd 100%);
+}
+
+
+
+body {
+  height: 100%;
+  /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+
 }
 
 body h1 {
   text-align: center;
 }
 
-.slide-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1000px;
-  margin: auto;
-  position: relative;
-}
-
-.slide-container .slide {
-  display: none;
-  width: 100%;
-}
-
-.slide-container .slide.fade {
-  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-.slide-container .slide img {
-  width: 100%;
-}
-
-
-
-.active {
-  background-color: #717171;
-}
-
-.subcontent-container {
-
-  height: 250px;
-  background-color: white
-}
-
-
-
-.container {
+/* .container {
   background-color: white;
   height: 300px;
   margin-right: 200px;
-}
+} */
 
 .active {
   background-color: #1da1f2 !important;
@@ -336,7 +249,7 @@ body h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  background-color: grey;
+  background-color: white;
   height: 500px;
 }
 
@@ -359,8 +272,8 @@ body h1 {
   width: 490px;
   float: right;
   padding: 20px;
-  background: rgba(134, 134, 128, 0.4);
-  background-color: chartreuse;
+  /* background: rgba(134, 134, 128, 0.4);
+  background-color: chartreuse; */
   overflow: hidden;
   margin-right: 345px;
 }
@@ -463,10 +376,11 @@ h1:after {
   FOOTER SECTION
 -------------------------------- */
 footer {
-  margin-top: 60px;
-  background-color: black;
+  /* margin-top: 60px; */
+  background-color: grey;
   /* color: #fff; */
-  padding: 30px 0 180px;
+  /* padding: 30px 0 180px; */
+  height: 250px;
 }
 
 
@@ -476,7 +390,7 @@ footer {
 .container-sm {
   max-width: 960px;
   background-color: grey;
-  padding: 30px;
+  /* padding: 30px; */
   border-spacing: 25px;
 }
 
@@ -485,17 +399,6 @@ footer {
   GALLERY PAGE SECTION
 -------------------------------- */
 
-.galleryHolder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.galleryHolder img {
-  margin-bottom: 6.5px;
-  box-shadow: 3px 3px 3px #333;
-  border-radius: 5px;
-}
 
 /* -----------------------------
    Schdule .HTML SECTION
@@ -512,58 +415,31 @@ footer {
    SECTION 2- working today
 -------------------------------- */
 
-
-/* -----------------------------
-   SECTION
--------------------------------- */
-*/ .muviContent {
+/* SECTION-Contact Form */
+/* ================================== */
 
 
-  height: 200px;
-  width: 816px;
-}
-
-.muvidetailsLeft {
-
-  width: 500px;
-  height: 280px;
-  float: left;
-  /* margin-top: 85px; */
-  font-size: 15px;
-  text-align: justify;
-  font-family: Helvetica;
-  background-color: green;
-
-
-}
-
-
-.muvidetailsRight {
-  width: 500px;
-  height: 280px;
-  background-color: yellow;
-  float: right;
-  margin-left: 58px;
-
-}
-
-.listButton {
-  margin-top: 25px;
-  margin-right: 50px;
-}
-
-.request-access {
-  display: flex;
-  margin-right: 300px;
-  width: fit-content;
-}
-
-.display-3 {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-  padding: 1px;
-  margin-top: -64px;
-}
-
+/* ================================== */
 /* ===================Footer======================= */
+
+/* ============================================================================================================ */
+/* schedule.html css */
+/* ================================================================================================================ */
+.header-list-sc {
+  color: white;
+  height: 150px;
+  margin-top: -12px;
+  background-color: black;
+}
+
+.header-list-sc {
+  height: 400px;
+  /* margin-top: -150px; */
+  background-image: url("https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg");
+
+}
+
+.s-footer {
+  background-color: lightslategrey;
+  height: 70px;
+}

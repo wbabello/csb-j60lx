@@ -17,13 +17,13 @@ var movies = [
   "1BR  February 2nd, 2020",
   "100 Meters December 8th, 2021",
 ];
-// document.querySelector(".schedule").innerHTML = movies[0];
+document.querySelector(".schedule").innerHTML = movies[0];
 for (let i = 0; i < movies.length; i++) {
-  //document.querySelector(".schedule").innerHTML += `<p>${movies[i]}</p>`;
+  document.querySelector(".schedule").innerHTML += `<p>${movies[i]}</p>`;
 }
 
-// const random = Math.floor(Math.random() * 9);
-// document.querySelector(".random").innerHTML += `<p>${movies[random]}</p>`;
+const random = Math.floor(Math.random() * 9);
+document.querySelector(".random").innerHTML += `<p>${movies[random]}</p>`;
 
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide");
@@ -50,13 +50,13 @@ const prev = () => {
   init(currentSlide);
 };
 
-// document.querySelector(".next").addEventListener("click", next);
+document.querySelector(".next").addEventListener("click", next);
 
-// document.querySelector(".prev").addEventListener("click", prev);
+document.querySelector(".prev").addEventListener("click", prev);
 
 setInterval(() => {
   next();
-}, 2000);
+}, 5000);
 
 dots.forEach((dot, i) => {
   dot.addEventListener("click", () => {
